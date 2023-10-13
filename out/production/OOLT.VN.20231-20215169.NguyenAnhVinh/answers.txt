@@ -36,23 +36,4 @@ Lab1_226 : Mục đích tính toán cơ bản các hàm ( bậc nhất 1 ẩn , 
            - Hàm main : Tạo menu bằng switch để dễ dàng cho việc lựa chọn mỗi hàm tính
 
 Lab1_81 :  Tạo ra một thông báo xác nhận (Yes/No/Cancle) trên màn hình bằng showConfirmDialog
-           Sau khi chọn hiển thị một Message thông báo việc chọn Yes và ( No/Cancle )
-
-Lab1_82 :  Chương trình giúp chúng ta làm quen với việc nhập dữ liệu từ bàn phím bằng Scanner
-           Sau khi nhập lần lượt từ tên, tuổi, chiều cao. Chương trình sẽ trả về một kết quả
-           tổng hợp từ những biến đã nhập.
-
-Lab1_83 :  Chương trình in ra kí tự * dạng tam giác theo số dòng nhập từ bàn phím.
-           Nhập vào số dòng a cần in ra.
-           Thiết lập vòng for(int i=1; i<=a;i++) để xét từng dòng, lồng vào bên trong
-           là hai vòng for để in ra khoảng trắng và in ra số * trên mỗi dòng.
-           Với vòng for in ra khoảng trắng for(int j=(a-1);j>=i;j--)
-           Với vòng for in ra * thì for (int k=1;k<=(2*i-1);k++)
-           Ví dụ nhập vào a = 4 thì tại dòng thứ nhất : Số khoảng trăắng cần in là j=4 --> j>=1 --> 3 khoảng trắng
-                                                        Số * cần in là k=1 -->k<=1 --> 1 *
-           Tương tự như vậy thì tại dòng thứ hai : Số khoảng trắng cần in là j=4 --> j>=2 --> 2 khoảng trắng
-                                                   Số * cần in là k=1 --> k<=3 --> 3 *
-
-Lab1_84 :
-
-Lab1_86 : Yêu cầu tính tổng của 2 ma trận
+           Sau khi chọn hiển thị một Message thông báo việc chọn Yes
