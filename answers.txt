@@ -37,6 +37,8 @@ Lab1_226 : Mục đích tính toán cơ bản các hàm ( bậc nhất 1 ẩn , 
 
 Lab1_81 :  Tạo ra một thông báo xác nhận (Yes/No/Cancle) trên màn hình bằng showConfirmDialog
            Sau khi chọn hiển thị một Message thông báo việc chọn Yes và ( No/Cancle )
+           Question : Nếu chọn Cancle thì màn hình sẽ hiển thị Message thông báo chọn No
+
 
 Lab1_82 :  Chương trình giúp chúng ta làm quen với việc nhập dữ liệu từ bàn phím bằng Scanner
            Sau khi nhập lần lượt từ tên, tuổi, chiều cao. Chương trình sẽ trả về một kết quả
@@ -55,11 +57,14 @@ Lab1_83 :  Chương trình in ra kí tự * dạng tam giác theo số dòng nh�
 
 Lab1_84 :  Yêu cầu nhập vào tháng và năm từ đó in ra số ngày của tháng đó.
            Với yêu cầu này sẽ gặp phải trường hợp năm nhuận -4 năm có một lần ( có tháng 2 là 29 ngày )
-           - Tạo 3 hàm con :
+           - Tạo 3 hàm con ( input month, leap year , get days ) :
                    + Month : trả ra giá trị của tháng ( vì người dùng có thể nhập tên tháng hoặc số hoặc 3 chữ đầu của tháng )
-                   + isLeapYear : Hàm sẽ kiểm tra xem có phải là một năm nhuận hay không?
-                   +getDaysInMonth : Hàm sẽ đưa ra số ngày của tháng bằng toán tử điều kiện - nhập chi tiết số ngày của từng tháng
-
+                   + isLeapYear : Hàm sẽ kiểm tra xem có phải là một năm nhuận hay không? bẳng cách
+                                  year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) trả về true (năm nhuận) nếu thỏa mãn
+                   + getDaysInMonth : Hàm sẽ đưa ra số ngày của tháng bằng toán tử điều kiện - nhập chi tiết số ngày của từng tháng
+           - Hàm main : Nhập vào biến toàn cục year và month. Nếu year <= thì cho phép nhập lại ( bằng do -while) , tương tự với month
+                       ( nhưng month thì được lấy từ hàm Month bên trên ).
+                        Sau đó gọi hàm isLeapYear để kiểm tra năm nhuận, và hàm getDaysInMonth để lấy ngày trong tháng. Và in ra terminal kết quả.
 
 Lab1_85 : Yêu cầu nhập vào một mảng số nguyên một chiều, sau đó sắp xếp, tính tổng và tính giá trị trung bình
           - Tạo 4 hàm void ( nhập , hiển thị, sắp xếp, tính toán )
