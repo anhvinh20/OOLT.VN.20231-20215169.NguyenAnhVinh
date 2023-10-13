@@ -1,28 +1,7 @@
 import java.util.Scanner;
 
 public class Lab1_84 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int year, month;
-        do {
-            System.out.print("Year: ");
-            year = scanner.nextInt();
-        } while (year <= 0);
-        do {
-            System.out.print("Month:  ");
-            String monthInput = scanner.next();
-            month = parseMonth(monthInput);
-        } while (month < 1 || month > 12);
-
-        boolean isLeapYear = isLeapYear(year);
-
-        int daysInMonth = getDaysInMonth(month, isLeapYear);
-
-        // Hiển thị kết quả
-        System.out.println("Tháng " + month + " năm " + year + " có " + daysInMonth + " ngày.");
-    }
-
-    public static int parseMonth(String monthInput) {
+    public static int Month(String monthInput) {
         String[] months = {"tháng 1", "tháng 2", "tháng 3", "tháng 4", "tháng 5", "tháng 6", "tháng 7", "tháng 8", "tháng 9", "tháng 10", "tháng 11", "tháng 12"};
         for (int i = 0; i < months.length; i++) {
             if (monthInput.equalsIgnoreCase(months[i]) || monthInput.equalsIgnoreCase(months[i].substring(0, 3))) {
@@ -45,5 +24,26 @@ public class Lab1_84 {
         int[] daysInMonth = {31, isLeapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         return daysInMonth[month - 1];
     }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int year, month;
+        do {
+            System.out.print("Year: ");
+            year = scanner.nextInt();
+        } while (year <= 0);
+        do {
+            System.out.print("Month:  ");
+            String monthInput = scanner.next();
+            month = Month(monthInput);
+        } while (month < 1 || month > 12);
+
+        boolean isLeapYear = isLeapYear(year);
+
+        int daysInMonth = getDaysInMonth(month, isLeapYear);
+
+
+        System.out.println("Tháng " + month + " năm " + year + " có " + daysInMonth + " ngày.");
+    }
+
 
 }

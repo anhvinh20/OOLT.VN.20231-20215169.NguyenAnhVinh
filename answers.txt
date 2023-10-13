@@ -53,7 +53,12 @@ Lab1_83 :  Chương trình in ra kí tự * dạng tam giác theo số dòng nh�
            Tương tự như vậy thì tại dòng thứ hai : Số khoảng trắng cần in là j=4 --> j>=2 --> 2 khoảng trắng
                                                    Số * cần in là k=1 --> k<=3 --> 3 *
 
-Lab1_84 :
+Lab1_84 :  Yêu cầu nhập vào tháng và năm từ đó in ra số ngày của tháng đó.
+           Với yêu cầu này sẽ gặp phải trường hợp năm nhuận -4 năm có một lần ( có tháng 2 là 29 ngày )
+           - Tạo 3 hàm con :
+                   + Month : trả ra giá trị của tháng ( vì người dùng có thể nhập tên tháng hoặc số hoặc 3 chữ đầu của tháng )
+                   + isLeapYear : Hàm sẽ kiểm tra xem có phải là một năm nhuận hay không?
+                   +getDaysInMonth : Hàm sẽ đưa ra số ngày của tháng bằng toán tử điều kiện - nhập chi tiết số ngày của từng tháng
 
 
 Lab1_85 : Yêu cầu nhập vào một mảng số nguyên một chiều, sau đó sắp xếp, tính tổng và tính giá trị trung bình
