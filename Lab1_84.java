@@ -1,110 +1,49 @@
 import java.util.Scanner;
 
 public class Lab1_84 {
-    Scanner scanner = new Scanner(System.in);
-    int daysInMonth = 0;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int year, month;
+        do {
+            System.out.print("Year: ");
+            year = scanner.nextInt();
+        } while (year <= 0);
+        do {
+            System.out.print("Month:  ");
+            String monthInput = scanner.next();
+            month = parseMonth(monthInput);
+        } while (month < 1 || month > 12);
 
-    // Nhập tháng từ người dùng
-        System.out.print("Nhập tháng (số, tên đầy đủ hoặc tên viết tắt): ");
-    String month = scanner.nextLine().toLowerCase();
-        System.out.print("Nhập năm: ");
-    int year = scanner.nextInt();
+        boolean isLeapYear = isLeapYear(year);
 
-    // Kiểm tra tháng và xác định số ngày trong tháng
-        switch(month)
+        int daysInMonth = getDaysInMonth(month, isLeapYear);
 
-    {
-        case "1":
-        case "January":
-        case "Jan.":
-        case "Jan":
-            daysInMonth = 31;
-            break;
-        case "2":
-        case "February":
-        case "Feb.":
-        case "Feb":
-            if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
-                daysInMonth = 29; // Năm nhuận, tháng 2 có 29 ngày
-            } else {
-                daysInMonth = 28;
-            }
-            ;
-            break;
-        case "3":
-        case "March":
-        case "Mar.":
-        case "Mar":
-            daysInMonth = 31;
-            break;
-        case "4":
-        case "April":
-        case "Apr.":
-        case "Apr":
-            daysInMonth = 30;
-            break;
-        case "5":
-        case "May":
-
-            daysInMonth = 31;
-            break;
-        case "6":
-        case "June":
-        case "Jun":
-
-            daysInMonth = 30;
-            break;
-        case "7":
-        case "July":
-        case "Jul":
-
-            daysInMonth = 31;
-            break;
-        case "8":
-        case "August":
-        case "Aug.":
-        case "Aug":
-            daysInMonth = 31;
-            break;
-        case "9":
-        case "September":
-        case "Sept.":
-        case "Sep":
-            daysInMonth = 30;
-            break;
-        case "10":
-        case "October":
-        case "Oct.":
-        case "Oct":
-            daysInMonth = 31;
-            break;
-        case "11":
-        case "November":
-        case "Nov.":
-        case "Nov":
-            daysInMonth = 30;
-            break;
-        case "12":
-        case "December":
-        case "Dec.":
-        case "Dec":
-            daysInMonth = 31;
-            break;
-        default:
-            System.out.println("Tháng không hợp lệ.");
-            break;
-    }
-
-    // Kiểm tra nếu là năm nhuận và tháng là tháng 2
-
-
-    // Hiển thị số ngày trong tháng
-        if(daysInMonth >0)
-
-    {
+        // Hiển thị kết quả
         System.out.println("Tháng " + month + " năm " + year + " có " + daysInMonth + " ngày.");
     }
 
-        scanner.close();
+    public static int parseMonth(String monthInput) {
+        String[] months = {"tháng 1", "tháng 2", "tháng 3", "tháng 4", "tháng 5", "tháng 6", "tháng 7", "tháng 8", "tháng 9", "tháng 10", "tháng 11", "tháng 12"};
+        for (int i = 0; i < months.length; i++) {
+            if (monthInput.equalsIgnoreCase(months[i]) || monthInput.equalsIgnoreCase(months[i].substring(0, 3))) {
+                return i + 1;
+            }
+        }
+        try {
+            int month = Integer.parseInt(monthInput);
+            return month;
+        } catch (NumberFormatException e) {
+            return -1;
+        }
+    }
+
+    public static boolean isLeapYear(int year) {
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    }
+
+    public static int getDaysInMonth(int month, boolean isLeapYear) {
+        int[] daysInMonth = {31, isLeapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        return daysInMonth[month - 1];
+    }
 
 }

@@ -55,4 +55,25 @@ Lab1_83 :  Chương trình in ra kí tự * dạng tam giác theo số dòng nh�
 
 Lab1_84 :
 
-Lab1_86 : Yêu cầu tính tổng của 2 ma trận
+
+Lab1_85 : Yêu cầu nhập vào một mảng số nguyên một chiều, sau đó sắp xếp, tính tổng và tính giá trị trung bình
+          - Tạo 4 hàm void ( nhập , hiển thị, sắp xếp, tính toán )
+                   + Nhập : sử dụng vòng for để nhập lần lượt từng phần tử vào mảng
+                   + Hiển thị : Sử dụng vòng for để in ra từng phần tử
+                   + Sắp xếp : Sử dụng phương pháp sắp xếp nổi bột để xếp từ giá trị bé tới lớn
+                   + Tính toán : Sử dụng vòng for để cộng từng phần tử vào biến sum, sau đó dùng biến
+                                 sum chia cho số phần tử của mảng để được giá trị trung bình.
+          - Hàm main : Khai báo biến toàn cục mảng a[] và số phần tử của mảng : n để sử dụng dễ dàng trong việc
+                       gọi các hàm void bên trên.
+
+Lab1_86 : Yêu cầu tính tổng của 2 ma trận ( 2 ma trận phải cùng kích thước thì mới cộng được ).
+          Nhập vào int a,b ( số hàng, số cột )
+          Tạo array1[a][b] để lưu giá trị của ma trận thứ nhất bằng cách dùng mảng 2 chiều để nhập dữ liệu.
+                 for ( x = 0 ; x < a ; x++ )
+                             for ( y = 0 ; y < b ; y++ )
+                                 array1[x][y] = sc.nextInt();
+                 2 vòng for này sẽ liên tục tăng giá trị để ta có thể nhập dữ liệu vào ma trận.
+          Tương tự với array2.
+          Sau khi có được 2 ma trận: ta cộng tổng từng phần tử trong 2 ma trận với nhau ( lại sử dụng 2 vòng for
+          như bên trên ) : sum[x][y] = array1[x][y] + array2[x][y];
+          Và in ra giá trị sum[x][y].
