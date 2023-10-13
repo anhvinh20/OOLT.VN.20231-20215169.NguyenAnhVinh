@@ -38,7 +38,18 @@ Lab1_226 : Mục đích tính toán cơ bản các hàm ( bậc nhất 1 ẩn , 
 Lab1_81 :  Tạo ra một thông báo xác nhận (Yes/No/Cancle) trên màn hình bằng showConfirmDialog
            Sau khi chọn hiển thị một Message thông báo việc chọn Yes và ( No/Cancle )
            Question : Nếu chọn Cancle thì màn hình sẽ hiển thị Message thông báo chọn No
-
+                      Về việc thay đổi màn hình hiển thị từ "Yes/No" thành "I do/ I don't"
+                      int option = JOptionPane.showConfirmDialog(null,
+                                      "Do you want to change to the first class ticket?");
+                      null là hiển thị ở chính giữa màn hình , "Do you want..." là phần message;
+                      title : tiêu đề cuộc thoại
+                      optionType: Là loại hộp thoại, ở đây JOptionPane.YES_NO_OPTION chỉ có hai lựa chọn là Yes và No.
+                      messageType: Là loại thông báo, ở đây JOptionPane.QUESTION_MESSAGE sử dụng biểu tượng câu hỏi.
+                      icon: Là biểu tượng hiển thị bên cạnh thông báo. Trong trường hợp này, không sử dụng biểu tượng nên để là null.
+                      options: Là một mảng các đối tượng đại diện cho các lựa chọn. Trong trường hợp này, đã khai báo String[] options = {"I Do", "I Don't"}.
+                      initialValue: Là giá trị mặc định được chọn khi hộp thoại xuất hiện. Ở đây, giá trị mặc định được chọn là options[0], tức là "I Do".
+                                    Nếu người dùng chọn Yes hoặc No mà không thay đổi, giá trị trả về từ hộp thoại sẽ là options[0].
+                      Vậy nếu muốn thay đổi từ "Yes/No" thành "I do/ I don't" thì ta phải thay đổi ở option!
 
 Lab1_82 :  Chương trình giúp chúng ta làm quen với việc nhập dữ liệu từ bàn phím bằng Scanner
            Sau khi nhập lần lượt từ tên, tuổi, chiều cao. Chương trình sẽ trả về một kết quả
