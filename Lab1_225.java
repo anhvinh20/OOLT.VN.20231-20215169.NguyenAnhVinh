@@ -24,13 +24,13 @@ public class Lab1_225 {
 //    		"Show sum two numbers", JOptionPane.INFORMATION_MESSAGE);
 //    System.exit(0);
 
-        JOptionPane.showMessageDialog(null, "|"+num1 + "-" + num2+"|"+ "="+ num4,
-                "Show abs diff two numbers", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, num1 + "+" + num2+ "="+ num3+"\n"+"|"+num1 + "-" + num2+"|"+ "="+ num4 +"\n"+num1 + "/" + num2 + "="+ num5+"\n",
+                "Show two numbers sum,diff,div: ", JOptionPane.INFORMATION_MESSAGE);
         System.exit(0);
 
-        JOptionPane.showMessageDialog(null, num1 + "/" + num2 + "="+ num5,
-                "Show abs diff two numbers", JOptionPane.INFORMATION_MESSAGE);
-        System.exit(0);
+//        JOptionPane.showMessageDialog(null, num1 + "/" + num2 + "="+ num5,
+//                "Show div two numbers", JOptionPane.INFORMATION_MESSAGE);
+//        System.exit(0);
 
     }
 }

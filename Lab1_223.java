@@ -1,5 +1,4 @@
 import javax.swing.*;
-
 public class Lab1_223 {
     public static void main(String[] args) {
         String result;

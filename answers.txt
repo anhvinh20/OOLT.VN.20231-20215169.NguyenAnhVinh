@@ -1,0 +1,24 @@
+Lab1_221 : Việt và dịch 2 dòng lệnh đầu tiên để làm quen với Java,
+           kết quả hiển thị ở Terminal.
+Lab1_222 : Chương trình để làm quen với Java in ra màn hình đoạn
+           Message thông báo.
+Lab1_223 : Chương trình để làm quen với String, sau đó xuất ra màn hình
+           đoạn Message thông báo.
+Lab1_224 : Chương trình yêu cầu ta nhập vào các số và xuất ra màn hình đoạn
+           Message thông báo, mục đích cho ta hiểu về cách cộng String.
+Lab1_225 : Vẫn yêu cầu nhập vào 2 số như Lab1_224 nhưng output là tổng 2 số,
+           hiệu 2 số , thương 2 số.
+           - Đầu tiên ta sử dụng num1 = Double.parseDouble(strNum1) để đổi lần lượt
+           chuỗi strNum1 thành double num1, thuận lợi cho việc tính toán.
+           - Tiếp đó bằng cách sử dụng các toán tử cở bản, và hàm Math.abs để
+           tính toán.
+           - Xuất ra màn hình trực tiếp ( Tổng, Trị tuyệt đối hiệu, Thương )
+Lab1_226 : Mục đích tính toán cơ bản các hàm ( bậc nhất 1 ẩn , hệ pt bậc nhất 2 ẩn,
+           phương trình bậc 2 )
+           - Tạo các static void cho mỗi hàm :
+                 + Hàm bậc nhất 1 ẩn ( dạng ax+b=0 ) first_degree() :
+                       Nếu a=0, cho phép nhập lại bằng cách gọi lại hàm
+                       Nếu a#0 thì x = -b/a;
+                 + Hệ pt bậc nhất 2 ẩn ( dạng a11.x1 + a12.x2 =b1 và a21.x1 + a22.x2 =b2 ) system_first_degree():
+                       Tính 3 định thức D, D1, D2
+                       Nếu D#0 --> x1 = D1/D và x2
