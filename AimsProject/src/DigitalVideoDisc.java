@@ -54,4 +54,10 @@ public class DigitalVideoDisc {
 
     }
 
+    @Override
+    public String toString() {
+        String print = String.format("%-15s%s", this.title , this.cost);
+        return print ;
+    }
+
 }
