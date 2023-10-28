@@ -24,6 +24,10 @@ public class DigitalVideoDisc {
     public float getCost() {
         return cost;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
     // Constructor
     public DigitalVideoDisc(String title) {
         this.title = title;
