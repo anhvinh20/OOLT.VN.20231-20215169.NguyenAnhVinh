@@ -1,3 +1,5 @@
+package hust.soict.hedspi.aims.disc.DigitalVideoDisc;
+
 public class DigitalVideoDisc {
     private String title ;
     private String category ;
@@ -68,6 +70,10 @@ public class DigitalVideoDisc {
     public String toString() {
         String print = String.format("%-15s%s", this.title , this.cost);
         return print ;
+    }
+    // Hàm kiểm tra xem title nhập vào có trùng với title trong giỏ hàng không
+    public boolean isMatchTitle(String title1) {
+        return this.getTitle().equals(title1);
     }
 
 }

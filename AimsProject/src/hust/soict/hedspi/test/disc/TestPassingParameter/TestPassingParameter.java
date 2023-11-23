@@ -1,3 +1,7 @@
+package hust.soict.hedspi.test.disc.TestPassingParameter;
+
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+
 public class TestPassingParameter {
     public static void main(String[] args) {
         // TODO Auto-generated method stub

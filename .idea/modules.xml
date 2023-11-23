@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AimsProject/AimsProject.iml" filepath="$PROJECT_DIR$/AimsProject/AimsProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab02/Lab02.iml" filepath="$PROJECT_DIR$/Lab02/Lab02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OtherProjects/Lab02/Lab02.iml" filepath="$PROJECT_DIR$/OtherProjects/Lab02/Lab02.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOLT.VN.20231-20215169.NguyenAnhVinh.iml" filepath="$PROJECT_DIR$/OOLT.VN.20231-20215169.NguyenAnhVinh.iml" />
     </modules>
   </component>
