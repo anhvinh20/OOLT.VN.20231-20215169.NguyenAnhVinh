@@ -29,8 +29,8 @@ public class DigitalVideoDisc extends Media {
         super(title, category, cost);
     }
 
-    public DigitalVideoDisc(String title, String category, String director, float cost) {
-        super(title, category, cost);
+    public DigitalVideoDisc(int id ,String title, String category, String director, float cost) {
+        super(id ,title, category, cost);
         this.director = director;
     }
 
@@ -45,9 +45,6 @@ public class DigitalVideoDisc extends Media {
         String print = String.format("%-15s%s", getTitle() , getCost());
         return print ;
     }
-
-
-
 
     // Hàm kiểm tra xem title nhập vào có trùng với title trong giỏ hàng không
     public boolean isMatchTitle(String title1) {
