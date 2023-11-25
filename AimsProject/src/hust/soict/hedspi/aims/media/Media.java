@@ -61,5 +61,8 @@ public class Media {
         this.category = category;
         this.cost = cost;
     }
+    public Media(){
+
+    }
 
 }
