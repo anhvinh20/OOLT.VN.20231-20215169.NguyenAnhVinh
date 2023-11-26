@@ -1,0 +1,32 @@
+1. 
+Lợi ích quan trọng của đa hình:
+
+Mã nguồn dễ tái sử dụng (Reusable Code): Đa hình giúp tạo ra mã nguồn linh hoạt và tái sử dụng dễ dàng. Bạn có thể sử dụng cùng một giao diện hoặc lớp cơ sở để tương tác với nhiều đối tượng khác nhau mà không cần thay đổi nguồn mã.
+
+Mở rộng nhanh chóng (Khả năng mở rộng): Đa hình hóa việc mở rộng hệ thống dễ dàng. Khi bạn thêm vào hệ thống một loại đối tượng mới, bạn chỉ cần phát triển giao diện tương ứng mà không cần phải sửa đổi các phần khác của nguồn mã.
+
+Dễ dàng quản lý nguồn mã hóa (Quản lý mã dễ dàng): Tạo hình giúp giảm bớt sự phức tạp của nguồn mã hóa, làm cho nó dễ dàng quản lý và hiểu.
+
+Tính linh hoạt (Linh hoạt): Tăng cường tính hoạt động của hệ thống. Một đối tượng có thể thay đổi hành vi của vi tùy thuộc vào cảnh ngữ mà nó không tương thích.
+
+Tính mở rộng (Khả năng mở rộng): Bạn có thể mở rộng chức năng của một đối tượng mà không cần sửa đổi mã nguồn hiện tại, chỉ cần thêm một lớp mới và phát triển các phương thức tương ứng.
+
+Tính tái sử dụng (Polymorphism): Tính chất đa hình giúp tái sử dụng mã nguồn một cách hiệu quả. Một giao diện hoặc cơ sở dữ liệu có thể được sử dụng để tương tác với nhiều loại đối tượng khác nhau.
+
+Phát triển ứng dụng một cách dễ dàng (Phát triển ứng dụng dễ dàng hơn): Đa hình giúp giảm độ phức tạp của việc phát triển ứng dụng, đồng thời làm cho mã nguồn dễ hiểu hơn và dễ bảo trì hơn.
+
+2. Làm thế nào Kế thừa hữu ích để đạt được Đa hình trong Java?
+
+Kế thừa cho phép một lớp con sử dụng các phương thức của lớp cha mà
+ không cần triển khai lại chúng. Điều này tạo ra khả năng đa hình,
+ vì các lớp con có thể thực hiện lại các phương thức được kế thừa 
+theo cách của riêng mình.
+3. Sự khác biệt giữa Đa hình và Kế thừa trong Java là gì?
+
+Đa hình (Polymorphism): Cho phép một đối tượng có thể thực hiện nhiều 
+hành vi khác nhau thông qua cùng một giao diện. Đa hình có thể được
+ đạt được bằng cách sử dụng kế thừa và giao diện.
+Kế thừa (Inheritance): Là một khái niệm trong hướng đối tượng cho
+ phép một lớp (lớp con) kế thừa thuộc tính và phương thức của lớp khác
+ (lớp cha). Kế thừa cung cấp cơ chế để tái sử dụng mã và xây dựng quan hệ
+ "is-a" giữa các lớp.
