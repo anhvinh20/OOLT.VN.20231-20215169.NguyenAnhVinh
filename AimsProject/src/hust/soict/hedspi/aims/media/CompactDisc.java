@@ -52,4 +52,12 @@ public class CompactDisc extends Disc implements Playable {
             track.play();
         }
     }
+
+
+    // test đa hình
+    @Override
+    public String toString() {
+        String print = String.format("%-15s%s%s", getArtist(), getTitle() , getCost());
+        return print ;
+    }
 }

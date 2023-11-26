@@ -1,7 +1,13 @@
 package hust.soict.hedspi.aims.Aims;
 
 import hust.soict.hedspi.aims.cart.Cart;
+import hust.soict.hedspi.aims.media.Book;
 import hust.soict.hedspi.aims.media.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.Disc;
+import hust.soict.hedspi.aims.media.Media;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Aims {
     public static void main(String[] args) {
@@ -26,8 +32,11 @@ public class Aims {
 //        anOrder.addMedia(dvd1,dvd2);
 
 
-        anOrder.print();
+        anOrder.toString();
 
         anOrder.removeMedia(dvd1);
+
+
+
     }
 }

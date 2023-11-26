@@ -47,4 +47,17 @@ public class Book extends Media {
         else
             System.out.println("The author's name not found !");
     }
+
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Book - ");
+        sb.append("Title: ").append(getTitle()).append(", ");
+        sb.append("Category: ").append(getCategory()).append(", ");
+        sb.append("Cost: ").append(getCost()).append(", ");
+        sb.append("Authors: ").append(getAuthors());
+        return sb.toString();
+    }
 }
