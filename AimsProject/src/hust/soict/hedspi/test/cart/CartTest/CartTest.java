@@ -1,7 +1,11 @@
 package hust.soict.hedspi.test.cart.CartTest;
 
 import hust.soict.hedspi.aims.cart.Cart;
-import hust.soict.hedspi.aims.media.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CartTest {
     public static void main(String[] args) {
@@ -26,5 +30,53 @@ public class CartTest {
         // To-do : test the search methods here
 //        cart.searchCartTitle();
 
+        ArrayList<Track> track1 = new ArrayList<Track>();
+        Track t1 = new Track("t1",13);
+        Track t2 = new Track("t2",12);
+
+        track1.add(t1);
+        track1.add(t2);
+        CompactDisc cd = new CompactDisc(1,"trog","dm",11.5f,"fc",
+                track1);
+        List<Media> mediae = new ArrayList<Media>();
+        DigitalVideoDisc dvd = new DigitalVideoDisc("Movie Title", "Action", "Film Director",12 , 120);
+
+        // Tạo Book
+        Book book = new Book(12, "Java Programming", "Programming", 29f);
+        book.addAuthor("Nguyen Anh Vinh");
+        book.addAuthor("Quang");
+        // tạo một số phương tiện ở đây
+        // ví dụ: cd, dvd, book
+
+        mediae.add(cd);
+        mediae.add(dvd);
+        mediae.add(book);
+
+        for (Media m: mediae) {
+            System.out.println("\n1. "+m.toString());
+        }
+
+        System.out.println("Original Order:");
+        for (Media media : mediae) {
+            System.out.println(media);
+        }
+
+        // Sắp xếp theo tiêu đề, sau đó theo chi phí
+        Collections.sort(mediae, Media.COMPARE_BY_TITLE_COST);
+
+        System.out.println("\nSorted by Title then Cost:");
+        for (Media media : mediae) {
+            System.out.println(media);
+        }
+
+        // Sắp xếp theo chi phí, sau đó theo tiêu đề
+        Collections.sort(mediae, Media.COMPARE_BY_COST_TITLE);
+
+        System.out.println("\nSorted by Cost then Title:");
+        for (Media media : mediae) {
+            System.out.println(media);
+        }
     }
-}
+
+    }
+

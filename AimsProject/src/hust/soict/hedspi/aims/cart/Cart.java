@@ -4,7 +4,9 @@ package hust.soict.hedspi.aims.cart;
 import hust.soict.hedspi.aims.media.Media;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
+
 
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
@@ -52,6 +54,7 @@ public class Cart {
         }
         System.out.println("Total Cost is:    " + totalCost());
         System.out.println("***************************************************");
+
 
 
 
