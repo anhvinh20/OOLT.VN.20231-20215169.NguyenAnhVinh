@@ -7,6 +7,7 @@ import hust.soict.hedspi.aims.store.Store;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import javafx.stage.Stage;
 
 public class Aims {
     public static void main(String[] args) {
