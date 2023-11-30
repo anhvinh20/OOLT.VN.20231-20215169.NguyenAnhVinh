@@ -10,30 +10,31 @@ import java.util.Scanner;
 
 public class Aims {
     public static void main(String[] args) {
-        Cart anOrder = new Cart();
+        Cart cart = new Cart();
+        Store store = new Store();
         DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King",
                 "Animation","Roger Allers",87,19.95f);
-        anOrder.addMedia(dvd1);
+        cart.addMedia(dvd1);
 
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars",
                 "Science Fiction","George Lucas",87,24.95f);
-        anOrder.addMedia(dvd2);
+        cart.addMedia(dvd2);
 
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
                 "Animation",18.99f);
-        anOrder.addMedia(dvd3);
+        cart.addMedia(dvd3);
 
 //        DigitalVideoDisc[] order2 = new DigitalVideoDisc[2];
 //        order2[0] = dvd2 ;
 //        order2[1] = dvd1 ;
-//        anOrder.addMedia(order2);
+//        cart.addMedia(order2);
 //
-//        anOrder.addMedia(dvd1,dvd2);
+//        cart.addMedia(dvd1,dvd2);
 
 
-        anOrder.toString();
+        cart.toString();
 
-        anOrder.removeMedia(dvd1);
+        cart.removeMedia(dvd1);
 
 
         Scanner scanner = new Scanner(System.in);
@@ -265,7 +266,4 @@ public class Aims {
         cart.clear();
     }
 
-
-
-    }
 }

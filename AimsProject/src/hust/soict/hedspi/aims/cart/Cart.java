@@ -47,44 +47,21 @@ public class Cart {
         float total = 0;
         for (Media disc : this.itemsOrdered) {
             if (disc != null) {
-                System.out.println(i+"."+ disc.toString());
+                System.out.println(i + "." + disc.toString());
                 i++;
                 total += disc.getCost();
             }
         }
         System.out.println("Total Cost is:    " + totalCost());
         System.out.println("***************************************************");
-// Cần phải update thêm
-        public void searchById(int id) {
-            System.out.println("Search results for ID: " + id);
-            for (Media m : itemsOrdered) {
-                if (m.getId() == id) {
-                    System.out.println(m.toString());
-                    return;
-                }
-            }
-            System.out.println("No items found.");
-        }
-
-        public void searchByTitle(String title) {
-            boolean found = false;
-            System.out.println("Search results for keywords: " + title);
-            for (Media m : itemsOrdered) {
-                if (m.isMatch(title)) {
-                    System.out.println(m.toString());
-                    found = true;
-                }
-            }
-            if (!found)
-                System.out.println("No items found.");
-        }
+    }
 
 
         public int size() {
             return itemsOrdered.size();
         }
 
-        public void placeOrder() {
+        public void clear() {
             itemsOrdered.clear();
         }
 
@@ -106,4 +83,3 @@ public class Cart {
 //    }
 //
     }
-}
