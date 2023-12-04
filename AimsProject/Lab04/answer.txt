@@ -1,0 +1,47 @@
+1.
+AWT có top-level container chính là Frame, đại diện cho cửa sổ chính với thanh tiêu đề và các nút điều khiển.
+Frame của AWT là thành phần heavyweight, tức là phụ thuộc vào hệ thống cửa sổ native.
+Swing cung cấp một bộ các top-level container phong phú hơn, bao gồm JFrame, JDialog và JWindow.
+Các container này là thành phần lightweight, không phụ thuộc vào hệ thống và có khả năng tùy chỉnh cao.
+Swing cũng mang lại trải nghiệm người dùng đồng nhất trên các nền tảng, và đồng thời cung cấp nhiều tính năng và tùy chọn tùy chỉnh hơn so với AWT.
+
+2.
+Trong AWT và Swing, nhiều thành phần giao diện người dùng có chức năng tương đồng nhưng có tên lớp khác nhau.
+So sánh giữa một số thành phần thông thường:
+-Button:
+        AWT: java.awt.Button
+        Swing: javax.swing.JButton
+-Label:
+        AWT: java.awt.Label
+        Swing: javax.swing.JLabel
+-TextField:
+        AWT: java.awt.TextField
+        Swing: javax.swing.JTextField
+-TextArea:
+        AWT: java.awt.TextArea
+        Swing: javax.swing.JTextArea
+-Checkbox:
+        AWT: java.awt.Checkbox
+        Swing: javax.swing.JCheckBox
+-CheckboxGroup:
+        AWT: java.awt.CheckboxGroup (Swing không có class tương đương, thay vào đó sử dụng ButtonGroup cho các nút kiểu checkbox)
+
+3.
+Xử lý sự kiện trong ứng dụng Swing và AWT của Java tuân theo mô hình tương tự, nhưng có một số khác biệt quan trọng.
+Cả Swing và AWT đều sử dụng người nghe (listener) để xử lý sự kiện. So sánh:
+-AWT:
+       +Người Nghe Sự Kiện (Listener):
+            AWT sử dụng giao diện (interface) java.awt.event.ActionListener cho việc lắng nghe sự kiện click chuột hoặc sự kiện action khác.
+            Các phương thức như addActionListener được sử dụng để đăng ký người nghe cho các thành phần như nút (Button).
+       +Xử Lý Sự Kiện:
+            Việc xử lý sự kiện thường được thực hiện bằng cách triển khai phương thức actionPerformed từ giao diện ActionListener.
+-Swing:
+       +Người Nghe Sự Kiện (Event Listener):
+            Swing sử dụng giao diện javax.swing.event.ActionListener cho các thành phần như JButton.
+            Các phương thức như addActionListener cũng được sử dụng để đăng ký người nghe cho các thành phần.
+       +Xử Lý Sự Kiện:
+            Trong Swing, xử lý sự kiện thường được thực hiện bằng cách triển khai phương thức actionPerformed từ giao diện ActionListener.
+--> Khác Biệt Chính:
+    Một sự khác biệt chính là giao diện người nghe của AWT và Swing nằm ở các gói khác nhau (java.awt.event và javax.swing.event).
+Swing thường cung cấp các phương thức và lớp mở rộng để hỗ trợ xử lý sự kiện linh hoạt hơn so với AWT.
+Tuy cả hai đều tuân theo mô hình người nghe sự kiện trong Java, nhưng Swing thường cung cấp các tính năng mở rộng và linh hoạt hơn.
