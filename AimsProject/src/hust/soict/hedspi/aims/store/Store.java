@@ -10,6 +10,15 @@ public class Store {
     }
 
     ArrayList<Media> ItemsInStore = new ArrayList<>();
+
+    public ArrayList<Media> getItemsInStore() {
+        return ItemsInStore;
+    }
+
+    public void setItemsInStore(ArrayList<Media> itemsInStore) {
+        ItemsInStore = itemsInStore;
+    }
+
     public void removeMedia(Media media) {
         if(ItemsInStore.remove(media)){
         System.out.println("The media " + media.getTitle() + " has been removed");
