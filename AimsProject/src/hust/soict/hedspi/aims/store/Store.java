@@ -6,6 +6,7 @@ import hust.soict.hedspi.aims.media.Media;
 import java.util.ArrayList;
 
 public class Store {
+
     public Store() {
     }
 

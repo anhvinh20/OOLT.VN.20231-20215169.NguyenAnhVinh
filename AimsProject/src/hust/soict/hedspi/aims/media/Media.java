@@ -80,5 +80,25 @@ public class Media {
     public Media(){
     }
 
+    @Override
+    public boolean equals(Object o) {
+        try {
+            // Object compare with itself
+            if (o == this) {
+                return true;
+            }
+            // Check if the object is an instance of Media
+            if (!(o instanceof Media other)) {
+                return false;
+            }
+            // Compare the titles and return accordingly
+            return this.getTitle().equals(other.getTitle()) && this.getCost() == other.getCost();
+        } catch (NullPointerException | ClassCastException e) {
+            return false;
+        }
+    }
+
+
+}
 
 }
