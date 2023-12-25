@@ -71,7 +71,29 @@ public class Cart {
             itemsOrdered.clear();
         }
 
+    public Media searchById(int id) {
+        for (Media disc : itemsOrdered) {
+            if (disc != null && disc.getId() == id) {
+                System.out.println("DVD found: " + disc.getTitle() + " (ID: " + disc.getId() + ")");
+                return disc;
+            }
+        }
+        System.out.println("DVD with ID " + id + " not found in the cart.");
+        return null;
+    }
+    public void searchByTitle(String title) {
+        boolean found = false;
+        for (Media disc : itemsOrdered) {
+            if (disc != null && disc.getTitle().equalsIgnoreCase(title)) {
+                System.out.println("DVD : " + disc.getTitle() + " (ID: " + disc.getId() + ")");
+                found = true;
+            }
+        }
 
+        if (!found) {
+            System.out.println("khong tim thay '" + title );
+        }
+    }
 
         //14.1
 //    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
