@@ -1,0 +1,24 @@
+17) 
+1. Nếu chúng ta sử dụng phương tiện giao diện Comparable, lớp nào nên
+ thực hiện giao diện Comparable?
+
+Nếu sử dụng giao diện Comparable, chúng ta nên thực hiện nó trong lớp Media.
+
+2. Trong các lớp đó, làm thế nào bạn nên thực hiện phương thức compareTo()
+ để phản ánh thứ tự mong muốn?
+
+Chúng ta nên thực hiện phương thức compareTo() sao cho nó so sánh theo thứ tự 
+mong muốn, ví dụ như sắp xếp theo tiêu đề sau đó theo chi phí hoặc ngược lại.
+
+3. Chúng ta có thể có hai quy tắc sắp xếp cho một mục (theo tiêu đề sau đó theo
+ chi phí và ngược lại) không khi sử dụng giao diện Comparable?
+
+Không, giao diện Comparable chỉ cho phép một quy tắc sắp xếp.
+
+4. Nếu các đĩa DVD có một quy tắc sắp xếp khác (theo tiêu đề, sau đó theo
+ độ dài giảm, sau đó theo chi phí), làm thế nào bạn sẽ sửa đổi mã của bạn
+ để cho phép điều này?
+
+Chúng ta có thể thêm các so sánh mới vào lớp DigitalVideoDisc và sử dụng
+ chúng tùy thuộc vào loại đối tượng. Cụ thể, chúng ta có thể thêm Comparator
+ mới cho DVD, ví dụ MediaComparatorForDVD, và sử dụng nó khi cần thiết.

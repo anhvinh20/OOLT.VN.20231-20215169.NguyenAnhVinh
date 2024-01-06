@@ -1,0 +1,27 @@
+10. Trong Java, có thể tạo nhiều phương thức xây dựng (constructor) khác nhau
+cho một lớp. Từ đó cho phép tạo các đối tượng của lớp với các thuộc tính khác nhau
+từ các phương thức xây dựng khác nhau, tùy thuộc vào số lượng và kiểu dữ liệu
+của các tham số truyền vào.
+
+
+14.
+Nếu cần sự linh hoạt cao và muốn gọi phương thức một cách
+dễ dàng với số lượng đối số thay đổi, "truyền tham số tùy ý" là lựa chọn tốt.
+Ngược lại, nếu muốn có kiểm soát chính xác hơn về kiểu dữ liệu
+và hiệu suất, "truyền mảng" sẽ tốt hơn.
+
+
+15.
+Java là ngôn ngữ lập trình "truyền theo giá trị".
+Điều này có nghĩa là khi bạn truyền đối số cho một phương thức,
+những gì bạn thực sự truyền là giá trị của các đối số đó chứ không phải tham chiếu
+đến các biến ban đầu.
+
+Sau khi gọi swap(jungleDVD, cinderellaDVD), thì đang thực hiện việc hoán đổi
+giá trị tham chiếu của jungleDVD và cinderellaDVD. Khi thay đổi giá trị của các tham chiếu,
+không ảnh hưởng tới đối tượng gốc được trỏ bởi các tham chiếu này.
+
+Sau khi gọi changeTitle(jungleDVD, cinderellaDVD.getTitle()),
+thì đang truyền giá trị cinderellaDVD.getTitle() , không phải là một tham chiếu trực tiếp đến cinderellaDVD.
+Trong phương thức changeTitle(), chỉ thay đổi giá trị của đối tượng được truyền vào thông qua tham số dvd,
+không ảnh hưởng đến đối tượng cinderellaDVD gốc được trỏ bởi cinderellaDVD.
